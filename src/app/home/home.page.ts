@@ -9,15 +9,23 @@ import { IPregunta } from './../interfaces/interfaces';
   standalone: false,
 })
 export class HomePage {
-
+  galderak : IPregunta[] = [];
   //Zerbitzua inportatu
-  constructor() {}
+  constructor(private cuestionarioService: CuestionarioService) { }
 
   //Metodo bat sortu "Erantzun" onclick egiteko
+  Erantzun() {
+    this.cuestionarioService.presentAlert();
+  }
   //IGaldera bat jasoko du eta zerbitzua deituko du beharrezkoak diren eragiketak egiteko
+  GordeData() {
+    this.cuestionarioService.getDatuak();
+  }
 
   //Sortu metodo bat "Gorde"ren onclick-a kudeatzeko
   //Ez du parametrorik jasotzen eta zerbitzuari deituko dio dagokion eragiketak egiteko.
+  Gorde() {
 
+  }
 
 }

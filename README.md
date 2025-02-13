@@ -1,1 +1,1 @@
-Erantzun galdera hemen:
+Erantzun galdera hemen: ionic generate component /konponenteak/goiburukoa –spec=false
